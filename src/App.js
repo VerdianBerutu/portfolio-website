@@ -52,10 +52,10 @@ const PortfolioWebsite = () => {
     },
     {
       icon: <Palette className="w-16 h-16 text-purple-400" />,
-      title: "Data Engineer & ML",
+      title: "Data Science & ML",
       description: "Proficient in predictive modeling, statistical analysis, and clustering algorithms. Experienced with machine learning frameworks and optimization techniques.",
       focus: "Predictive Modeling, Statistical Analysis, Clustering",
-      tools: ["TensorFlow", "ETL Pipeline", "Scikit-learn", "Matplotlib", "Pyhton"]
+      tools: ["TensorFlow", "Keras", "Scikit-learn", "Matplotlib", "Seaborn"]
     }
   ];
 
@@ -236,11 +236,98 @@ const PortfolioWebsite = () => {
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="w-96 h-96 bg-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
               <div className="absolute w-72 h-72 bg-pink-600/20 rounded-full blur-2xl -top-10 -right-10 animate-pulse delay-500"></div>
-              <div className="absolute w-40 h-40 border-4 border-purple-400/40 rounded-full top-20 right-20 animate-spin-slow"></div>
-              <div className="absolute text-7xl text-purple-400/60 top-5 right-40">+</div>
             </div>
-            <div className="relative z-10 w-96 h-96 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-3xl shadow-2xl border-4 border-purple-500/30 flex items-center justify-center backdrop-blur-sm">
-              <div className="text-9xl">👨‍💻</div>
+            
+            {/* Main Card with Animated Developer Illustration */}
+            <div className="relative z-10 w-96 h-96 rounded-3xl p-1 bg-gradient-to-br from-purple-500 via-pink-500 to-purple-600 shadow-2xl hover:scale-105 transition-transform duration-500">
+              <div className="w-full h-full bg-gradient-to-br from-gray-900 via-purple-900/50 to-gray-900 rounded-3xl flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                
+                {/* Animated Background Elements */}
+                <div className="absolute top-10 right-10 w-20 h-20 border-4 border-purple-400/30 rounded-full animate-spin-slow"></div>
+                <div className="absolute bottom-10 left-10 w-16 h-16 border-4 border-pink-400/30 rounded-full animate-spin-slow" style={{animationDirection: 'reverse'}}></div>
+                <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-purple-400 rounded-full animate-ping"></div>
+                <div className="absolute top-1/3 left-1/3 w-2 h-2 bg-pink-400 rounded-full animate-ping delay-500"></div>
+                <div className="absolute bottom-1/4 right-1/3 w-1 h-1 bg-purple-300 rounded-full animate-pulse"></div>
+                
+                {/* SVG Animated Developer Illustration */}
+                <div className="relative mb-4 w-full flex justify-center">
+                  <svg width="200" height="200" viewBox="0 0 200 200" className="filter drop-shadow-2xl">
+                    {/* Floating Code Symbols */}
+                    <text x="20" y="30" className="text-xs fill-purple-400 animate-float" style={{animationDelay: '0s'}}>{'<>'}</text>
+                    <text x="160" y="40" className="text-xs fill-pink-400 animate-float" style={{animationDelay: '0.5s'}}>{ '{ }'}</text>
+                    <text x="170" y="160" className="text-xs fill-purple-300 animate-float" style={{animationDelay: '1s'}}>{'</>'}</text>
+                    
+                    {/* Head */}
+                    <ellipse cx="100" cy="70" rx="35" ry="38" className="fill-purple-200/90"/>
+                    
+                    {/* Hair */}
+                    <path d="M 65 55 Q 60 40 70 35 Q 80 30 90 32 Q 100 28 110 32 Q 120 30 130 35 Q 140 40 135 55" 
+                          className="fill-gray-800"/>
+                    
+                    {/* Glasses */}
+                    <g className="animate-pulse">
+                      <rect x="70" y="65" width="20" height="15" rx="3" className="fill-none stroke-purple-600 stroke-2"/>
+                      <rect x="110" y="65" width="20" height="15" rx="3" className="fill-none stroke-purple-600 stroke-2"/>
+                      <line x1="90" y1="72" x2="110" y2="72" className="stroke-purple-600 stroke-2"/>
+                    </g>
+                    
+                    {/* Eyes */}
+                    <circle cx="80" cy="72" r="3" className="fill-gray-800"/>
+                    <circle cx="120" cy="72" r="3" className="fill-gray-800"/>
+                    
+                    {/* Smile */}
+                    <path d="M 85 85 Q 100 90 115 85" className="fill-none stroke-gray-800 stroke-2" strokeLinecap="round"/>
+                    
+                    {/* Body */}
+                    <rect x="70" y="108" width="60" height="70" rx="5" className="fill-gradient-to-b from-purple-600 to-purple-700"/>
+                    
+                    {/* Laptop */}
+                    <g className="animate-bounce-slow">
+                      {/* Laptop Base */}
+                      <rect x="55" y="140" width="90" height="50" rx="3" className="fill-gray-800"/>
+                      <rect x="60" y="145" width="80" height="40" rx="2" className="fill-gray-900"/>
+                      
+                      {/* Screen Content - Code Lines */}
+                      <rect x="65" y="150" width="30" height="2" className="fill-green-400 animate-pulse"/>
+                      <rect x="65" y="155" width="25" height="2" className="fill-purple-400 animate-pulse" style={{animationDelay: '0.2s'}}/>
+                      <rect x="65" y="160" width="35" height="2" className="fill-pink-400 animate-pulse" style={{animationDelay: '0.4s'}}/>
+                      <rect x="65" y="165" width="20" height="2" className="fill-blue-400 animate-pulse" style={{animationDelay: '0.6s'}}/>
+                      <rect x="65" y="170" width="40" height="2" className="fill-purple-300 animate-pulse" style={{animationDelay: '0.8s'}}/>
+                      <rect x="65" y="175" width="30" height="2" className="fill-green-300 animate-pulse" style={{animationDelay: '1s'}}/>
+                    </g>
+                    
+                    {/* Arms typing */}
+                    <g className="animate-typing">
+                      <ellipse cx="50" cy="150" rx="8" ry="12" className="fill-purple-200" transform="rotate(-20 50 150)"/>
+                      <ellipse cx="150" cy="150" rx="8" ry="12" className="fill-purple-200" transform="rotate(20 150 150)"/>
+                    </g>
+                    
+                    {/* Coffee Cup */}
+                    <g className="animate-float" style={{animationDelay: '0.3s'}}>
+                      <rect x="150" y="120" width="20" height="25" rx="2" className="fill-pink-600"/>
+                      <ellipse cx="160" cy="120" rx="10" ry="3" className="fill-pink-500"/>
+                      <path d="M 170 125 Q 180 125 180 130 Q 180 135 170 135" className="fill-none stroke-pink-600 stroke-2"/>
+                      {/* Steam */}
+                      <path d="M 155 115 Q 153 110 155 105" className="fill-none stroke-gray-400 stroke-1 opacity-60 animate-pulse"/>
+                      <path d="M 165 115 Q 167 110 165 105" className="fill-none stroke-gray-400 stroke-1 opacity-60 animate-pulse" style={{animationDelay: '0.3s'}}/>
+                    </g>
+                  </svg>
+                </div>
+                
+                {/* Status Badge */}
+                <div className="flex items-center gap-2 mb-4 bg-green-500/10 border border-green-500/30 px-4 py-2 rounded-full">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-xs text-green-400 font-semibold">Available for Work</span>
+                </div>
+                
+                {/* Name & Title */}
+                <div className="text-center space-y-2 mb-4">
+                  <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
+                    Verdian L. Berutu
+                  </h3>
+                  <p className="text-sm text-gray-400 font-medium">Data Analyst • Full-Stack Dev</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -397,6 +484,27 @@ const PortfolioWebsite = () => {
         }
         .animate-spin-slow {
           animation: spin-slow 20s linear infinite;
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        @keyframes bounce-slow {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-5px); }
+        }
+        .animate-bounce-slow {
+          animation: bounce-slow 2s ease-in-out infinite;
+        }
+        @keyframes typing {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(2px); }
+        }
+        .animate-typing {
+          animation: typing 0.6s ease-in-out infinite;
         }
         .delay-500 {
           animation-delay: 500ms;
